@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	overscroll-behavior: none !important;
+	transition: background-color 250ms ease-out, color 150ms ease-out;
+	-webkit-tap-highlight-color: hsl(0deg 0% 0% / 0%);
+}
+
+::selection {
+	color: hsl(0, 0%, 100%) !important;
+	background: hsl(0, 0%, 0%) !important;
+}
+
+html {
+	font-size: 16px;
+	cursor: default;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	overflow: hidden;
+}
+
+canvas {
+	z-index: 10;
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	pointer-events: all;
+}
+
+main {
+	overflow: hidden;
+	position: fixed;
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.page {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	left: 0;
+	width: 100%;
+	bottom: 48px;
+	padding-left: 110%;
+}
+
+.box {
+	flex-shrink: 0;
+	height: 4.214285vh;
+	width: 7.9285725vh;
+
+	&:not(:last-child) {
+		margin-right: 16px;
+	}
+}
