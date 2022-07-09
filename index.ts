@@ -2,12 +2,8 @@ import GSAP from 'gsap'
 
 import { inRange, clamp, debounce, getBounds } from './utils'
 
-/**
-*
-* animation is done using GSAP because i had a problem preventing odd transition overlaps with my previous implementation
-* GSAP " overwrite: 'auto' " fixes that problem
-*
-*/
+// animation is done using GSAP because i had a problem preventing odd transition overlaps with my previous implementation
+// GSAP " overwrite: 'auto' " fixes that problem
 
 type RGB = { r: number; g: number; b: number }
 
