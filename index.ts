@@ -28,9 +28,6 @@ const colors: RGB[] = [
 	{ r: 128, g: 223, b: 239 },
 ]
 
-console.log( 'STARTED' );
-
-
 class Canvas2D {
 	public viewport: {
 		height: number
