@@ -464,6 +464,7 @@ export class Gallery {
 
 			if ( inRange( mouseX, null, media.x, media.x + media.width ) && inRange( mouseY, null, media.y, media.y + media.height ) ) {
 				index = i
+        break
 			}
 		}
 
